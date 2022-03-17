@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/static/Icono 1.jpeg" type="image/x-icon">
+    <title>INFORMACION DEL LIBRO</title>
+</head>
+<!--ESQUINA CONEXION index.html - - - - perfil.html-->
+<!--CONEXION a carrito.html-->
+<style>
+    body {
+        background-image: url('https://www.ecestaticos.com/imagestatic/clipping/876/64c/87664c47b6aeaf01d60824dbd287dbf1/la-historia-de-las-librerias-mas-especiales-del-mundo.jpg?mtime=1620995024');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    #uno {
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color: #f5f5f5e5;
+        border: 1px solid #000;
+    }
+    #uno img {
+        padding: 3px;
+        border: 1px solid #000;
+        border-radius: 50%;
+    }
+    #red {
+        width: 50px;
+    }
+    #info_libro {
+        margin-top: 95px;
+        padding: 10px;
+    }
+    #tarjeta-info {
+        text-align: center;
+        z-index: -1;
+    }
+    #tarjeta-info img {
+        width: 450px;
+    }
+</style>
+
+<!--Logo/Informacion de libro/Boton de compra con opciones de envio/Icono de usuario-->
+<body class="bg-image">
+
+    <h1 id="uno" class="text-center">INFORMACIÓN DEL LIBRO
+        <a href="index.html" data-bs-toggle="tooltip" data-bs-html="true" title="Ir al inicio">
+            <img id="red" src="static/Redireccion.jpeg" alt="REDIRECCION">
+        </a>
+        <a href="perfil.html" data-bs-toggle="tooltip" data-bs-html="true" title="Ir al perfil">
+            <img id="red" src="static/Perfil.jpeg" alt="REDIRECCION AL PERFIL">
+        </a>
+        <a href="carrito.html" data-bs-toggle="tooltip" data-bs-html="true" title="Ir al carrito">
+            <img id="red" src="static/carrito.jpeg" alt="REDIRECCION AL CARRITO">
+        </a>
+    </h1>
+
+    <div id="info_libro">
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <div class="col">
+              <div class="card" id="tarjeta-info">
+                <div class="row justify-content-center">
+                    <img src="static/Libro 1.jpeg" class="card-img-top" alt="Libro 1">
+                </div>
+                
+                <div class="card-body">
+                  <h3 class="card-title mb-3 bg-warning rounded p-1">Libro 1</h3>
+                                  
+                  <div id="datos" class="text-start" style="background-color: #ffe4c4; border-radius: 5px;">
+                      <ul style="list-style:none; line-height: 30px;">
+                          <li>
+                            <strong>Nombre: </strong>Nombre del primer libro.
+                          </li>
+                          <li>
+                              <strong>Autor: </strong>Nombre del Autor
+                          </li>
+                          <li>
+                              <strong>Categoría: </strong> Categoría
+                          </li>
+                          <li>
+                              <strong>Precio: </strong> Precio
+                          </li>
+                          <li>
+                              <strong>Editorial: </strong> Editorial
+                          </li>
+                          <li>
+                              <strong>Stock: </strong> Stock
+                          </li>
+                          <li>
+                              <strong>Veces vendido: </strong> Número de veces vendido
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="d-block text-center m-2">
+                <!-- <a href="#" class="btn btn-warning" id="btnCarrito">Agregar al carrito</a> -->
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Agregar al carrito 
+                </button>
+                  <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">El libro está en tu carrito</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          GRACIAS :)
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+              
+            </div>
+        </div>
+    </div>
+
+    <!--abajo de esto, deben aparecer libros recomendados-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
